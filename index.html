@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.0/dist/jBox.all.min.css" rel="stylesheet"> <!-- jBox -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Vibes</title>
+</head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <nav id="menu1" class="marges">
+                        <img id="logo" src="./img/logo.png" alt="Une sorte de tête de mort">
+                    <div id="listeMenu"> <!-- retirer liste, pas de sens dans une nav -->
+                        <a href="#">Home</a> <!-- rajouter ancres -->
+                        <a href="#ancreAbout">About</a>
+                        <a href="#ancrePortfolio">Portfolio</a>
+                        <a href="#ancreTestimonials">Testimonials</a>
+                        <a href="#ancreContact">Contact</a>
+                        <a href="#ancrePages">Pages</a>
+                    </div>
+                </nav>
+                <nav role="navigation"> <!-- nav version mobile -->
+                    <div id="menuToggle">
+                      <input type="checkbox" />
+                      <span class="backgroundGris"></span>
+                      <span class="backgroundGris"></span>
+                      <span class="backgroundGris"></span>
+                      <div id="menu"> <!-- retirer liste, pas de sens dans une nav -->
+                        <a href="#">Home</a>
+                        <a href="#ancreAbout">About</a>
+                        <a href="#ancrePortfolio">Portfolio</a>
+                        <a href="#ancreTestimonials">Testimonials</a>
+                        <a href="#ancreContact">Contact</a>
+                        <a href="#ancrePages">Pages</a>
+                      </div>
+                    </div>
+                </nav>
+                <div class="goutte goutteVisible">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="goutte goutteCache">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </header>
+            <main>
+                <section id="zoneBanniere">
+                    <div id="textBanniere">
+                        <h1>HTML Template for creative folks and design agencies</h1>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                        <a id="boutonBanniere" href="#">READ&nbsp;MORE</a>
+                    </div>
+                </section>
+                <section id="choisir" class="marges backgroundBlanc">
+                    <a id="ancreAbout"></a>
+                    <div id="choisir1">
+                        <h2>Why Choose Us?</h2>
+                        <p id="texteChoisir1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatem praesentium fugiat perspiciatis neque!
+                        </p>
+                        <p id="texteChoisirCouleur">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint harum esse!
+                        </p>
+                    </div>
+                    <div id="choisir2">
+                        <h2>What You Get?</h2>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li">
+                                    <i data-type="iconeFA" class="fab fa-wordpress fa-2x couleurRose"></i></span>
+                                <div class="listeDecal">
+                                    <h3>COLORFUL & COMPACT</h3>
+                                    <p class="texteChoisirListe">
+                                        Portfolio WordPress Theme
+                                    </p>
+                                </div>
+                            </li>
+                            <li><span class="fa-li">
+                                <i data-type="iconeFA" class="fas fa-cog fa-2x couleurRose"></i></span>
+                                <div class="listeDecal">
+                                    <h3>VERY EASY TO USE</h3>
+                                    <p class="texteChoisirListe">
+                                        Page Builder & Shortcodes
+                                    </p>
+                                </div>
+                            </li>
+                            <li><span class="fa-li">
+                                <i data-type="iconeFA" class="far fa-paper-plane fa-2x couleurRose"></i></span>
+                                <div class="listeDecal">
+                                    <h3>CODED WITH SASS</h3>
+                                    <p class="texteChoisirListe">
+                                        Create Custom Skins in Minutes
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="choisir3">
+                        <div id="accordeon">
+                            <div class="accordeon-part afficherAccordeon">                                
+                                <h4><i class="fas fa-minus couleurRose"></i>Titre</h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, temporibus!
+                                </p>
+                            </div>
+                            <div class="accordeon-part">                                
+                                <h4><i class="fas fa-plus couleurRose"></i>Titre</h4>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, temporibus!
+                                </p>
+                            </div>
+                            <div class="accordeon-part">
+                                <h4><i class="fas fa-plus couleurRose"></i>Titre</h4>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, temporibus!
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- <ul class="fa-ul">
+                            <li class="blockAccordeon" data-type="liste"><span class="fa-li"><i class="fas fa-plus couleurRose"></i></span>Lorem, ipsum dolor.
+                                <p class="listeMotsC">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, similique!
+                                </p>
+                            </li>
+                            <li class="blockAccordeon" data-type="liste"><span class="fa-li"><i class="fas fa-plus couleurRose"></i></span>Lorem ipsum dolor sit.
+                                <p class="listeMotsC">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, quidem!
+                                </p>
+                            </li>
+                            <li class="blockAccordeon" data-type="liste"><span class="fa-li"><i class="fas fa-plus couleurRose"></i></span>Lorem, ipsum dolor.
+                                <p class="listeMotsC">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!
+                                </p>
+                            </li>
+                          </ul> -->
+                    </div>
+                </section>
+                <section>
+                    <div id="sectionImages" class="backgroundBlanc">
+                        <a id="ancrePortfolio"></a>
+                        <div data-type="image" class="groupeImg">
+                            <a href="./img/1.png" data-jbox-image="gallery1"><img class="groupeImg2" src="./img/1.png" alt="Image de ville très coloré"></a>
+                        </div>
+
+                        <div data-type="video" class="groupeImg">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" ><img class="groupeImg2" src="./img/2.png" alt="Buildings au loin"></a> <!-- je sais pas quoi mettre pour l'instant -->
+                            <i class="far fa-play-circle fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="image" class="groupeImg">
+                            <a href="./img/3.png" data-jbox-image="gallery1"><img class="groupeImg2" src="./img/3.png" alt="Décor modélisé en 3D assez vert"></a>
+                        </div>
+
+                        <div data-type="image" class="groupeImg">
+                            <a href="./img/4.jpg" data-jbox-image="gallery1"><img class="groupeImg2" src="./img/4.jpg" alt="Ville asiatique avec des légos"></a>
+                        </div>
+
+                        <div data-type="video" class="groupeImg">
+                            <a href="https://www.youtube.com/watch?v=Sr7ZUlsTwKc" target="_blank"><img class="groupeImg2" src="./img/5.jpg" alt="Photo prise de haut d'un paysage"></a>
+                            <i class="far fa-play-circle fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="music" class="groupeImg">
+                            <img class="groupeImg2" src="./img/6.jpg" alt="Buildings au loin de nuit">
+                            <i class="fas fa-music fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="video" class="groupeImg">
+                            <img class="groupeImg2" src="./img/7.jpg" alt="Bâtiments colorés à Londres">
+                            <i class="far fa-play-circle fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="music" class="groupeImg">
+                            <img class="groupeImg2"  src="./img/8.jpg" alt="Un couloir aérien entouré de vitres à la place des murs">
+                            <i class="fas fa-music fa-2x iconeImage"></i>
+                        </div>
+
+                        <!-- caché de base -->
+                        <div data-type="video" class="groupeImg cacher">
+                            <img class="groupeImg2" src="./img/9.jpg" alt="Bâtiment de verre">
+                            <i class="far fa-play-circle fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="music" class="groupeImg cacher">
+                            <img class="groupeImg2" src="./img/10.jpg" alt="Bâtiment de verre">
+                            <i class="fas fa-music fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="video" class="groupeImg cacher">
+                            <img class="groupeImg2" src="./img/11.jpg" alt="Bâtiment de verre">
+                            <i class="far fa-play-circle fa-2x iconeImage"></i>
+                        </div>
+
+                        <div data-type="music" class="groupeImg cacher">
+                            <img class="groupeImg2" src="./img/12.jpg" alt="Bâtiment de verre">
+                            <i class="fas fa-music fa-2x iconeImage"></i>
+                        </div>
+                    </div>
+                    <nav id="menu2" class="marges couleurRose backgroundBlanc"> <!-- retirer liste, pas de sens dans une nav -->
+                        <div id="menu2a">
+                            <a href="#ancrePortfolio" class="couleurRose" data-type="all">All</a>
+                            <a href="#ancrePortfolio" class="couleurGrise" data-type="audio2">Audio</a>
+                            <a href="#ancrePortfolio" class="couleurGrise" data-type="image2">Image</a>
+                            <a href="#ancrePortfolio" class="couleurGrise" data-type="video2">Video</a>
+                        </div>
+                        <div class="couleurRose boutonCouleurRose" data-type="boutonLoadMore">LOAD&nbsp;MORE</div>
+                    </nav>
+                </section>
+                <section id="avis" class="marges backgroundBlanc">
+                    <a id="ancreTestimonials"></a>
+                    <h2 id="titreClientTestimonials">Client Testimonials</h2>
+                    <hr class="ligneRouge">
+                    <div id="citation">
+                        <blockquote>
+                            <img class="personnes" src="./img/rouge.png" alt="Illustration d'une personne habillé en rouge">
+                            <div class="textCitation">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, et minus blanditiis ex dolor molestiae? Porro repellendus magnam nam veritatis dolores iure harum quisquam similique tempora. Voluptas, architecto. Repellendus, consequatur!
+                                <div>
+                                    <strong>Tommy Mars</strong>, Designer
+                                </div>
+                        </div>
+                        </blockquote>
+                        <blockquote>
+                            <img class="personnes" src="./img/jaune.png" alt="Illustration d'une personne habillé en jaune">
+                            <div class="textCitation">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident consectetur, odio beatae deleniti quae, voluptate ratione vitae officia inventore veniam distinctio labore, amet repudiandae! Officiis molestiae ipsa harum commodi quam.
+                                <div>
+                                    <strong>Floor Simons</strong>, Startup CEO
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote>
+                            <img class="personnes" src="./img/gris.png" alt="Illustration d'une personne habillé en gris">
+                            <div class="textCitation">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde facere dolorem libero, vero labore, at neque exercitationem quos veritatis ullam ipsam porro voluptatum laudantium optio magni eius corrupti corporis.
+                                <div>
+                                    <strong>Mick Neil</strong>, Rock Star
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <a href="#" class="couleurRose boutonCouleurRose">BECOME&nbsp;OUR&nbsp;CLIENT</a>
+                </section>
+                <section id="zoneBanniere2">
+                    <h2>NEW HORIZONS AWAIT</h2>
+                    <hr class="ligneRouge">
+                    <p>
+                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided.
+                    </p>
+                    <a href="#" class="couleurRose boutonCouleurRose">BUY ME ON THEMEFOREST</a>
+                </section>
+                <section id="sectionFormulaire" class="marges backgroundBlanc">
+                    <a id="ancreContact"></a>
+                    <h2>GET IN TOUCH</h2>
+                    <hr class="ligneRouge">
+                    <form action="#" method="POST">
+                        <div>
+                            <div>
+                                <label class="required" for="name">Votre nom</label><br>
+                                <input type="text" id="name" name="user_name" required>
+                            </div>
+                            <div>
+                                <label class="required" for="mail">Votre E-Mail</label><br>
+                                <input type="email" id="mail" name="user_mail" required>
+                            </div>
+                            <div>
+                                <label for="telephone">Votre n° de téléphone</label><br>
+                                <input type="tel" id="phone" name="user_phone">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="sujet">Sujet</label><br>
+                                <input type="text" id="sujet" name="user_subject">
+                            </div>
+                            <div>
+                                <label class="required" for="msg">Message</label><br>
+                                <textarea id="msg" name="user_message" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button class="formulaireBoutonRose" type="submit">ENVOYER</button>
+                            </div>             
+                        </div>   
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div id="zoneFooter1" class="marges">
+                    <a id="ancrePages"></a>
+                    <div id="zoneFooter2">
+                        <h2>ABOUT VIBES</h2>
+                        <hr class="ligneRouge2">
+                        <p>
+                            VIBES is an ideal theme for creative folks or design agencies. <strong>Ease of use and top-notch web design techniques</strong> are wrapped with several gorgeous color schemes.
+                        </p>
+                        <p>
+                            You can buy this responsive WordPress theme on <a class="couleurRose" href="https://themeforest.net/">ThemeForest</a>.
+                        </p>
+                    </div>
+                    <div id="zoneFooter3">
+                        <h2>NEWSLETTER</h2>
+                        <hr class="ligneRouge2">
+                        <p>
+                            <strong>VIBES</strong> contains fully working <strong>MailChimp</strong> subscribe form.
+                        </p>
+                        <form action="#" method="POST">
+                            <div>
+                                <input type="email" id="mailnewsletter" name="user_mailnewsletter" placeholder="Votre adresse E-Mail" required>
+                            </div>
+                            <div class="button2">
+                                <button type="submit" class="boutonCouleurRose">S'INSCRIRE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="zoneFooter4">
+                        <h2>TWITTER FEED</h2>
+                        <hr class="ligneRouge2">
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i  id="anim" class="fas fa-square"></i>
+                    </div>
+                    <div>
+                        <a href="#"><i id="chevron" class="fas fa-chevron-up fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="marges" id="zoneFooter5">
+                    <p>
+                        Buy this theme on <a href="https://themeforest.net/">ThemeForest</a>.
+                    </p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Elements</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    <script
+	    src="https://code.jquery.com/jquery-3.5.1.min.js"
+	    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- jBox -->
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.0/dist/jBox.all.min.js"></script>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
